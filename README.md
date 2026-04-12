@@ -1,7 +1,5 @@
-Disclaimer: this extenion is vibe coded.
+Disclaimer: this extenion is coded by AI.
 Adds a Bluetooth codec selector to the GNOME Shell Quick Settings panel.
-
-## What does it do?
 
 Queries connected Bluetooth audio devices via the BlueZ D-Bus API,
 lists supported codecs, and allows you to change the active codec
@@ -21,13 +19,8 @@ Supported codecs: **SBC · AAC · aptX · aptX HD · LDAC · LC3 · Opus**
 ## Installation
 
 Extract to `/home/{user}/.local/share/gnome-shell/extensions`
-
+On X11, Alt+F2
 On Wayland session: log out and log back in.
-
-## How it works
-Quick Settings → [BT Codec tile next to the volume button]
-→ device name
-→ [SBC] [AAC] [aptX HD] [LDAC] ← click to change
 
 ### Codec switching method
 
@@ -47,11 +40,4 @@ Quick Settings → [BT Codec tile next to the volume button]
 - If the device does not support a codec, it will not appear in the list.
 - LDAC / aptX HD require the device to support them as well.
 - "Audio not routed" warning: the device is connected but PipeWire has not yet
-  opened a sink. It disappears once an application starts playing audio.
-
-## About GCC integration
-
-Due to GTK process boundaries in GNOME Control Center, it is not possible
-for GNOME Shell extensions to directly inject widgets into the GCC window
-on Wayland. Therefore, the extension is integrated into the Quick Settings
-panel; this conforms to GNOME's official extension API.
+  opened a sink. It disappears once an a
