@@ -1,5 +1,4 @@
-# bt-codec-selector@local
-
+Disclaimer: this extenion is vibe coded.
 Adds a Bluetooth codec selector to the GNOME Shell Quick Settings panel.
 
 ## What does it do?
