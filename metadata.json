@@ -1,0 +1,8 @@
+{
+  "name": "Bluetooth Codec Selector",
+  "description": "Adds Bluetooth codec selection to GNOME Control Center sound panel",
+  "uuid": "bt-codec-selector@local",
+  "shell-version": ["45", "46", "47", "48"],
+  "version": 1,
+  "url": ""
+}
