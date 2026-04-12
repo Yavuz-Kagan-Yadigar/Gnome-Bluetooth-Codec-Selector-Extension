@@ -40,4 +40,4 @@ On Wayland session: log out and log back in.
 - If the device does not support a codec, it will not appear in the list.
 - LDAC / aptX HD require the device to support them as well.
 - "Audio not routed" warning: the device is connected but PipeWire has not yet
-  opened a sink. It disappears once an a
+  opened a sink. It disappears once an audio plays.
