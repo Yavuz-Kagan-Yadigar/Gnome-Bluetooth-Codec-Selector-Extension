@@ -19,25 +19,16 @@ Supported codecs: **SBC · AAC · aptX · aptX HD · LDAC · LC3 · Opus**
 ## Installation
 
 Extract to `/home/{user}/.local/share/gnome-shell/extensions`
-On X11, Alt+F2
-On Wayland session: log out and log back in.
 
-### Codec switching method
+To be able to see it on extensions:
 
-1. `wpctl set-param <node-id> Props '{ "bluez5.codec": "ldac" }'`  
-   Requires WirePlumber 0.5+.
+On X11, Alt+F2 to restart the shell
 
-2. If unsuccessful, falls back to PipeWire D-Bus `SetParam`.
-
-### Codec detection method
-
-- `wpctl status` → active BT sink node ID
-- `pw-cli info <node-id>` → `media.codec` property
+On Wayland session log out and log back in.
 
 ## Notes
 
 - Codec change may briefly interrupt the connection (renegotiation).
-- If the device does not support a codec, it will not appear in the list.
-- LDAC / aptX HD require the device to support them as well.
+-Only supported codecs shown.
 - "Audio not routed" warning: the device is connected but PipeWire has not yet
   opened a sink. It disappears once an audio plays.
